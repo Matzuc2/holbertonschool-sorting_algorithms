@@ -19,7 +19,7 @@ void bubble_sort(int *array, size_t size)
 	size_t step;
 	int boolean;
 
-	if (array == NULL || size <= 0)
+	if (array == NULL || size <= 1)
 		return;
 
 
