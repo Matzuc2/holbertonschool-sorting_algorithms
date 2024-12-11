@@ -28,14 +28,17 @@ void swap(int *a, int *b)
  * tous les éléments inférieurs ou égaux
  * au pivot sont à gauche, et ceux supérieurs sont à droite.
  */
-int lomuto_partition(int *array, int low, int high, size_t size)
+int lomuto_partition(int *array, size_t low, size_t high, size_t size)
 {
 	int pivot = array[high];
-	int i = low - 1;
-	int j;
+	size_t i = low - 1;
+	size_t j;
 
 	if (array == NULL || size < 2)
-		return (0);
+		return (-1);
+
+	if (high >= size || low > high)
+		return (-1);
 
 	for (j = low; j < high; j++)
 	{
