@@ -1,3 +1,3 @@
-0(n) # Best case
-0(n2) # Average case
-0(n2) # Worst case
+O(n)
+O(n^2)
+O(n^2)
