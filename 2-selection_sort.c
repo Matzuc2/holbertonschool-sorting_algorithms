@@ -38,8 +38,8 @@ void selection_sort(int *array, size_t size)
 	{
 		/*Initialiser "small" avec l'élément actuel et "ptr" avec son adresse*/
 		small = array[i];
-		ptr = &array[i];
 		boolean = 0;
+		ptr = &array[i];
 
 	/* Trouver le plus petit élément dans le reste du tableau*/
 	for (n = i + 1; n < size; n++)
@@ -58,10 +58,10 @@ void selection_sort(int *array, size_t size)
 		temp = array[i];
 		array[i] = small;
 		*ptr = temp;
+		print_array(array, size);
 	}
 
-	/*Affichage de l'état actuel du tableau*/
-	print_array(array, size);
+
 	}
 }
 
