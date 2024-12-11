@@ -34,6 +34,9 @@ int lomuto_partition(int *array, int low, int high, size_t size)
 	int i = low - 1;
 	int j;
 
+	if (array == NULL || size < 2)
+		return (0);
+
 	for (j = low; j < high; j++)
 	{
 		if (array[j] <= pivot)
@@ -67,6 +70,9 @@ int lomuto_partition(int *array, int low, int high, size_t size)
  */
 void quick_sort_helper(int *array, int low, int high, size_t size)
 {
+	if (array == NULL || size < 2)
+		return;
+
 	if (low < high)
 	{
 		int pivot_index;
