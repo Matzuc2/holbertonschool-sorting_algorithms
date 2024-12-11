@@ -22,6 +22,7 @@ void swap(int *a, int *b)
  * @low: L'indice de début de la sous-section du tableau.
  * @high: L'indice de fin de la sous-section du tableau.
  * @size: La taille totale du tableau.
+ * Return: L'indice du pivot après partitionnement.
  *
  * Retourne l'indice du pivot après partitionnement. La fonction partitionne
  * le tableau autour du pivot, tel que
